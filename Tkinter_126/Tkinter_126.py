@@ -16,8 +16,8 @@ root.geometry("600x600") #membuat ukuran untuk jendela
 judul_label = tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan", font=("Broadway", 16, "bold")) #menentukan jenis font pada tulisan aplikasi prediksi prodi pilihan dengan ukurna teks
 judul_label.pack(pady=10) #menempatkan  label dengan jarak 10 pixel 
 
-input_frame = tk.Frame(root)
-input_frame.pack(pady=10)
+input_frame = tk.Frame(root) #membuat frame
+input_frame.pack(pady=10) #membuat jarak pada tata letak
 
 for i in range(1, 11): #loop berjalan dari 1 hingga 11 kali
     tk.Label(input_frame, text=f"Nilai Mata Pelajaran {i}:", font=("Broadway", 10)).grid(row=i, column=0, sticky="w", padx=10, pady=5) #menempatkan jarak pada label
@@ -31,6 +31,7 @@ hasil_label.pack(pady=10) #menempatkan label dengan jarak 10 pixel secara vertic
 
 root.mainloop()
 #menjalankan aplikasi
+
 
 
 

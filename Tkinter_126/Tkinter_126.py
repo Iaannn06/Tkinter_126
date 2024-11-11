@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk
 
 def hasil_prediksi():
     hasil_label.config(text="Hasil Prediksi: Teknologi Informasi")
